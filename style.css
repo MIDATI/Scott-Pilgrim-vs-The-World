@@ -1,0 +1,72 @@
+#logo{
+    position: absolute;
+width: 714.98px;
+height: 394.77px;
+left: 186.13px;
+top: 26px;
+}
+body{
+    position: relative;
+width: 1440px;
+height: 900px;
+background: #FFC700;
+box-sizing: border-box;
+}
+li{display: inline;
+    
+width: 164px;
+height: 25px;
+left: 901px;
+top: 26px;
+font-family: Squada One;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 51px;
+
+color: #FFFFFF;
+}
+#menu {
+    width: 100%;
+    height: 100px;
+} 
+#menu ul{
+    float: right;
+    margin-right: 50px;
+}
+#principal{
+    
+position: absolute;
+width: 317px;
+height: 444px;
+left: 441px;
+top: 245px;
+}
+#contexto {
+    position: absolute;
+width: 1037px;
+height: 204px;
+left: 126px;
+top: 676px;
+background: rgba(110, 228, 186, 0.92);
+border: 2px solid #950707;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+padding: 30px;
+}
+#contexto p{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+#trailer{
+    background-image: url("Trailer.png");
+    position: absolute;
+width: 1440px;
+height: 900px;
+top: 921px;
+}
