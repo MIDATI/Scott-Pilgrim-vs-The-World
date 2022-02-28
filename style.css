@@ -1,72 +1,84 @@
-#logo{
-    position: absolute;
-width: 714.98px;
-height: 394.77px;
-left: 186.13px;
-top: 26px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Squada One", cursive;
+  position: relative;
+  background: #ffc700;
+  box-sizing: border-box;
 }
-body{
-    position: relative;
-width: 1440px;
-height: 900px;
-background: #FFC700;
-box-sizing: border-box;
-}
-li{display: inline;
-    
-width: 164px;
-height: 25px;
-left: 901px;
-top: 26px;
-font-family: Squada One;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 51px;
 
-color: #FFFFFF;
+/* Header */
+header {
+  height: 100px;
+  padding: 0 50px;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#menu {
+
+.logo {
+  text-transform: uppercase;
+  color: yellow;
+  font-weight: 300;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu {
+  font-size: 50px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: red;
+}
+
+#check {
+  display: none;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  /*HEADER*/
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
     width: 100%;
-    height: 100px;
-} 
-#menu ul{
-    float: right;
-    margin-right: 50px;
-}
-#principal{
-    
-position: absolute;
-width: 317px;
-height: 444px;
-left: 441px;
-top: 245px;
-}
-#contexto {
+    height: 100vh;
+    background: red;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
     position: absolute;
-width: 1037px;
-height: 204px;
-left: 126px;
-top: 676px;
-background: rgba(110, 228, 186, 0.92);
-border: 2px solid #950707;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 24px;
-padding: 30px;
-}
-#contexto p{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-color: #000000;
-}
-#trailer{
-    background-image: url("Trailer.png");
-    position: absolute;
-width: 1440px;
-height: 900px;
-top: 921px;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0%;
+  }
 }
